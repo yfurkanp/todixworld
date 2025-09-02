@@ -1,0 +1,756 @@
+/*--------------------------------------------------------------------- 
+File Name: style.css 
+---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- 
+import Fonts 
+---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800,800i&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+
+/*--------------------------------------------------------------------- 
+basic 
+---------------------------------------------------------------------*/
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+.logo{
+     margin-top: -8px;
+}
+
+
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     padding: 0;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 28px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+
+
+img {
+     max-width: 75%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+
+
+.navbar-form input {
+     border: none !important;
+}
+
+
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+.titlepage {
+     padding-bottom: 60px;
+}
+
+.titlepage::before {
+     content: "";
+     position: absolute;
+     border: #fff solid 5px;
+     border-width: 5px;
+     width: 80px;
+     z-index: 999;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     top: 55px;
+}
+
+.titlepage h2 {
+     font-size: 45px;
+     font-weight: bold;
+     line-height: 50px;
+     color: #323232;
+}
+
+.read_more {
+     display: inline-block;
+     background: #6dcff6;
+     color: #fff;
+     max-width: 215px;
+     height: 61px;
+     line-height: 61px;
+     width: 100%;
+     font-size: 17px;
+     text-align: center;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+}
+
+.read_more:hover {
+     background: #0e0b01;
+     color: #fff;
+     transition: ease-in all 0.5s;
+}
+
+.img_responsive {
+     max-width: 100%;
+}
+
+/* .text_align_center {
+     text-align: center;
+} */
+
+.text_align_left {
+     text-align: left;
+}
+
+.text_align_right {
+     text-align: right;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.container {
+     max-width: 1170px;
+}
+
+
+/*---------------------------- 
+loader  
+----------------------------*/
+
+.loader_bg {
+     position: fixed;
+     z-index: 9999999;
+     background: #fff;
+     width: 100%;
+     height: 100%;
+}
+
+.loader {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.loader img {
+     width: 280px;
+}
+
+
+/*--------------------------------------------------------------------- 
+header 
+---------------------------------------------------------------------*/
+
+.header {
+     width: 100%;
+     background: rgba(86, 87, 88, 0.3);
+     height: 106px;
+     padding: 37px 30px;
+     position: absolute;
+     z-index: 999;
+     box-shadow: 3px 0 13px rgba(237, 230, 230, 0.9);
+}
+
+
+/*--------------------------------------------------------------------- 
+menu section
+---------------------------------------------------------------------*/
+
+.navigation.navbar {
+     float: right;
+     padding: 0;
+}
+
+.navbar-nav {
+     margin-left: auto; /* Öğeleri sağa itmek için */
+ }
+ 
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     padding: 0px 30px;
+     color: #fff;
+     font-size: 20px;
+     line-height: 20px;
+     font-weight: 400;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     color: #fff;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+     color: #fff;
+}
+
+.di_no {
+     display: none;
+}
+
+ul.email {
+     padding-top: 1px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+}
+
+ul.email li {
+     padding: 0px 35px;
+}
+
+ul.email li:nth-child(2) {
+     padding-right: 0;
+}
+
+ul.email li a {
+     font-size: 17px;
+     color: #fff;
+}
+
+ul.email li i {
+     color: #fff;
+     font-size: 19px;
+}
+
+
+/** banner_main **/
+
+#top_section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0; 
+    position: relative;
+    background-position: center;
+    margin: 0 !important; 
+    height: 100%;
+}
+
+#top_section_web {
+    height: 100vh;
+    padding-top: 0; 
+    overflow: hidden;
+    position: relative;
+}
+
+#background-video-desktop {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: fill; 
+    z-index: -1;
+    padding: 0 !important;
+    margin: 0 !important;
+} 
+
+#myCarousel .carousel-indicators {
+     bottom: -50px;
+     margin-left: 11px;
+     right: inherit;
+}
+
+#myCarousel .carousel-indicators .active {
+     background: #0e0b01;
+}
+
+#myCarousel .carousel-indicators li {
+     cursor: pointer;
+     background: #fff;
+     border-radius: 40px;
+     width: 22px;
+     height: 22px;
+}
+
+#myCarousel a.carousel-control-next,
+#myCarousel a.carousel-control-prev {
+     display: none;
+}
+
+.relative {
+     position: inherit;
+     bottom: 0;
+     padding: 0;
+}
+
+.bluid {
+     margin-top: 10px;
+     font-family: 'Open Sans', sans-serif;
+     text-align: left;
+}
+
+.banner_main .bluid h1 {
+     color: #fff;
+     font-size: 100px;
+     line-height: 110px;
+     font-weight: bold;
+     padding-bottom: 25px;
+}
+
+.banner_main .bluid p {
+     color: #fff;
+     line-height: 25px;
+     font-weight: 500;
+     padding-bottom: 50px;
+     font-size: 17px;
+}
+
+.banner_main .bluid .read_more {
+     margin-right: 8px;
+     background: #fff;
+     color: #000;
+}
+
+.banner_main .bluid .read_more:hover {
+     color: #fff;
+     background: #0e0b01;
+}
+
+
+/** we_do **/
+
+.we_do {
+     background: url(../images/todixcharacters.jpg);
+     background-size: contain; /* Arka planı alanı kaplayacak şekilde büyüt */
+     background-position: center; /* Arka planın ortalanması */
+     width: 100vw;
+     height: 100vh;
+     background-repeat: no-repeat;
+     height: calc(100vw / 1.771); /* En-boy oranına göre yüksekliği ayarlar */
+     background-size: 100% 100%;
+}
+
+
+
+.swiper-container {
+     width: 475px;  
+     padding-top: 300px;
+     padding-bottom: 50px;
+     padding-left: 45px;
+     direction: rtl; 
+}
+
+.swiper-wrapper .swiper-slide {
+     width: 455px;
+}
+
+.swiper-slide:nth-child(n+4) {
+     display: none;
+   }
+
+
+/** end we_do **/
+
+
+/** about **/
+ 
+.about.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh; /* Ekranın tamamını kaplaması için */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Görseli alanın tamamına sığdır */
+  height: 100%;      /* Tam yükseklik */
+  width: 100%;       /* Tam genişlik */
+}
+
+.about {
+     /* background: url(../images/about_bg.jpg); */
+     /* background-position: center;
+     background-repeat: no-repeat; */
+     height: 100vh;
+     padding: 90px 90px;
+}
+
+
+
+/*pop up*/
+/* .fullscreen-popup {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     background-color: rgba(255, 255, 255);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-sizing: border-box;
+     display: none;
+   }
+   
+   .close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 4px;
+     background-color: #f44336;
+     color: #fff;
+     cursor: pointer;
+   }
+   
+   .popup-content {
+     position: relative;
+     padding: 20px;
+     background-color: #ffffff;
+     border-radius: 8px;
+     text-align: justify;
+     max-width: 80vw; 
+     overflow-y: auto; 
+     max-height: 90vh;
+   } */
+/** end about **/
+
+
+/** portfolio **/
+
+.portfolio {
+     padding-top: 90px;
+     padding-bottom: 90px;
+     background: #fff;
+}
+
+.portfolio .titlepage::before {
+     right: inherit;
+     border: #2e2f34 solid 5px;
+     left: 15px;
+}
+
+.portfolio_main {
+     margin-bottom: 30px;
+     transition: ease-in all 0.5s;
+}
+
+.portfolio_main figure {
+     margin: 0;
+     position: relative;
+     overflow: hidden;
+}
+
+
+.li_icon {
+     display: flex;
+     transition: ease-in all 0.7s;
+     z-index: 99999999999999999999999;
+     position: absolute;
+}
+
+.li_icon a {
+     background: #fff;
+     width: 60px;
+     height: 60px;
+     border-radius: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #3a404e;
+     box-shadow: 3px 0 9px rgba(30, 30, 30, 0.09);
+}
+
+.li_icon a:hover {
+     background: #0f1012;
+     color: #fff;
+}
+
+
+/* Tam ekran kapsayıcı */
+/* .fullscreen-img-container {
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  overflow: hidden; 
+  background-image: url('../images/section4.jpg');
+} */
+
+
+
+/* end portfolio */
+
+
+/** footer **/
+
+/* .footer {
+     background: #e70707;
+     padding-top: 10px
+} */
+
+.right-content{
+     right: -15%;
+}
+
+.left-content {
+     left: -100px;
+   }
+
+ul.social_icon {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center; /* İsteğe bağlı: Öğeleri dikey olarak ortalar */
+     list-style: none; /* Varsayılan madde işaretlerini kaldırır */
+     margin: 0; /* Varsayılan marjinleri sıfırlar */
+     padding: 0; /* Varsayılan boşlukları sıfırlar */
+}
+
+ul.social_icon li {
+     display: inline-flex;
+     margin-left: 0px;
+}
+
+ul.social_icon li:last-child {
+     padding-right: 50px;
+}
+
+ul.social_icon li a {
+     color: #fff;
+     display:  inline-block;
+     text-align: center;
+     line-height: 33px;
+     font-size: 28px;
+     font-weight: bold;
+}
+
+
+.conta ul li a {
+     color: #ffffff;
+}
+
+.conta ul li a i {
+     padding-right: 5px;
+}
+
+.copyright {
+     background: #e2111b;
+     padding: 30px 0px;
+}
+
+.copyright p {
+     color: #ececf1;
+     font-weight: 400;
+}
+
+.copyright a {
+     color: #fff;
+     font-family: 'Quicksand-Bold',sans-serif;
+     
+}
+
+
+
+/** end footer **/
+
+
+/*- - ener page css--*/
+
+
+.video-play-button {
+     position: absolute; /* Butonu container'a göre serbestçe yerleştirmek için */
+     bottom: -740px; /* Butonun yazının hemen altında yer alması için */
+     left: 22.1%;
+     transform: translateX(-50%); /* Butonu yatay olarak ortalamak için */
+     background-color: transparent; /* Arka planı saydam yapmak için */
+     border: none; /* Butonun kenarlıklarını kaldır */
+     cursor: pointer; /* Üzerine gelindiğinde fare imlecini göster */
+     font-size: 60px; /* Simgenin büyüklüğü */
+   }
+
+   .video-play-button img {
+     width: 200px; /* Resmin genişliğini ayarla */
+     height: auto; /* Resmin oranını koruyarak yüksekliğini otomatik ayarla */
+     display: block; /* Tarayıcı uyumluluğu için */
+   }
+
+   
+
+    /*todix karakter kısmı slider noktaları*/
+.swiper-pagination-bullet {
+     background: #2a2a2b !important; /* Noktaların rengi */
+     opacity: 0.9 !important;
+     width: 15px !important; /* Noktaların genişliğini büyüt */
+     height: 15px !important; /* Noktaların yüksekliğini büyüt */
+     margin: 15px 15px !important; /* Noktaların arasındaki boşluğu ayarla */
+     text-align: right; /* İçerikleri sağa hizala */
+     padding-right: 5px; /* Sağdan boşluk ekle (isteğe bağlı) */
+}
+
+   .swiper-pagination-bullet-active {
+     background: #ff0000 !important; /* Seçili olan noktanın rengi */
+     opacity: 1;
+   }
+
+/* mobil dikey video pc de kalkması */
+   #top_section_mobile {
+     display: none; 
+   }
+
+   .left-content p {
+     font-family: 'Quicksand-Bold', sans-serif;
+   }
+
+  /* Back-to-Top Butonu */
+#button {
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     text-align: center;
+     border-radius: 4px;
+     position: fixed;
+     bottom: 30px;
+     right: 20px;
+     transition: opacity .5s, visibility .5s;
+     opacity: 1 !important;
+     visibility: hidden;
+     z-index: 1000;
+     background-image: url('icon/scroll_back.PNG');
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-color: transparent;
+   }
+   
+   #button:hover {
+     cursor: pointer;
+     opacity: 1;
+   }
+   
+   #button.show {
+     opacity: 1;
+     visibility: visible;
+   }
+
+   /* İndex CSS */
+
+   .top-content {
+     width: 100%;
+     height: 100%;
+     padding: 0;
+   }
+
+   .top-content .carousel-control-prev {
+     border-bottom: 0;
+   }
+
+   .top-content .carousel-control-next {
+     border-bottom: 0;
+   }
+
+   .top-content .carousel-indicators li {
+     width: 13px;
+     height: 13px;
+     margin-left: 5px;
+     margin-right: 5px;
+     border-radius: 50%;
+   }
+
+   .carousel-indicators li {
+     background-color: #6b6b71; /* İstediğiniz rengi buraya yazın */
+   }
+
+   /* Aktif olan indicator'ın arka plan rengini değiştirir */
+   .carousel-indicators .active {
+     background-color: #ff0000; /* İstediğiniz rengi buraya yazın */
+   }
+
+   /*Modal*/
+   .modal-dialog {
+     width: 100vw; /* Tam ekran genişlik */
+     height: 100vh; /* Tam ekran yükseklik */
+     margin: 0;
+     padding: 0;
+     max-width: none; /* Genişlik sınırlamasını kaldır */
+   }
+
+   .modal-content {
+     width: 100vw; /* İçerik genişliği tam ekran */
+     height: 100vh; /* İçerik yüksekliği tam ekran */
+     border-radius: 0; /* Köşeleri düz yap */
+   }
+
+   .modal-body {
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+
+
+        
+
+
+   

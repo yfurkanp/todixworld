@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+    <!-- site metas -->
+    <title>Todix</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- awesome fontfamily -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+<style>
+  .fullscreen-img-container {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fullscreen-img-container.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+</style>
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row d_flex">
+            <div class="col-md-2 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="images/todix-logo.png" alt="#"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button
+                  class="navbar-toggler collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarsExample04"
+                  aria-controls="navbarsExample04"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample04" style="font-family: Quicksand, serif;">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#todix">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#top-content">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#play">Play</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#join">Join Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start slider section -->
+    <div id="top_section" class="banner_main">
+      <div id="top_section_web">
+        <video autoplay muted loop id="background-video-desktop">
+          <source src="videos/TODIX_WEB_PC.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Responsive için video -->
+      <div id="top_section_mobile">
+        <video autoplay muted loop playsinline id="background-video-mobile">
+          <source src="videos/TODIX_MOBILE_4_Compress.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <!-- end slider section -->
+
+    <!-- we_do -->
+    <div id="todix" class="section2image">
+      <button
+        class="we_do"
+        id="playButton"
+        class="video-play-button"
+        data-toggle="modal"
+        data-target="#videoModal"
+        disabled
+      >
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!--Sayfayı Bölmek İçin Boşluk-->
+            </div>
+
+            <div class="col-md-6">
+              <div class="swiper-container" dir="rtl">
+                <div class="swiper-wrapper">
+  
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-11.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli-yeni-06.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-20.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-24.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-19.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-17.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-23.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-10.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-22.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-08.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-15.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-03.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-02.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-01.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-04.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-05.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-07.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-09.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-12.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-13.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-14.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-18.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      style="max-width: 100%"
+                      src="images/golgeli yeni-21.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--Video Button-->
+          <button
+            id="playButton"
+            class="video-play-button"
+            data-toggle="modal"
+            data-target="#videoModal"
+          >
+            <img src="icon/watch.png" />
+          </button>
+        </div>
+      </button>
+    </div>
+
+    <!-- Modal Yapısı  -->
+    <!-- Video Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div
+          class="modal-content"
+          style="background-color: transparent; border: none"
+        >
+          <div class="modal-body p-0">
+            <!-- Video -->
+            <video
+              id="modalVideo"
+              controls
+              style="width: 100%; height: 100%; object-fit: cover"
+            >
+              <source src="videos/0.MP4" type="video/mp4" />
+              <!-- Desteklenmeyen tarayıcılar için mesaj -->
+              Tarayıcınız video etiketini desteklemiyor.
+            </video>
+          </div>
+          <button
+          type="button"
+          class="close position-absolute my-close-btn-close"
+          style="top: 15px; right: 7px; color: black; opacity: 1"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <img src="icon/popupClose.svg" alt="Close" style="width: 75px; height: 75px" />
+        </button>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- end we_do -->
+    <!-- about -->
+
+    <!-- <div class="about">
+      <div class="container"> -->
+
+    <!-- Top content -->
+    <br />
+    <br />
+    <div id="top-content" class="top-content">
+      <!-- Carousel -->
+      <div
+        id="carousel-example"
+        class="carousel slide"
+        data-ride="carousel"
+        data-touch="true"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-example"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example" data-slide-to="1"></li>
+          <li data-target="#carousel-example" data-slide-to="2"></li>
+          <li data-target="#carousel-example" data-slide-to="3"></li>
+          <li data-target="#carousel-example" data-slide-to="4"></li>
+          <li data-target="#carousel-example" data-slide-to="5"></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+
+          <!--Slider 0-->
+          <div class="carousel-item active">
+                      <button
+                        id="sliderbutton0"
+                        class="explore0"
+                        data-toggle="modal"
+                        data-target="#imageModal0"
+                      >
+                        <picture>
+                          <source
+                            media="(max-width: 576px)"
+                            srcset="images/mobileslider0.jpg"
+                          />
+          
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="images/mobileslider0.jpg"
+                          />
+          
+                          <source
+                            media="(max-width: 1366px)"
+                            srcset="images/mobileslider0.jpg"
+                          />
+          
+                          <img
+                            src="images/slider0.jpg"
+                            class="d-block w-100 responsive-img"
+                            alt="slide-img-0"
+                            style="max-width: 100%; max-height: 100%; margin-top: -15px"
+                          />
+                        </picture>
+                      </button>
+          </div>
+          
+          <!-- Modal0 -->
+          <div
+                      class="modal fade"
+                      id="imageModal0"
+                      tabindex="-1"
+                      aria-labelledby="imageModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-fullscreen">
+                        <div
+                          class="modal-content"
+                          style="background-color: transparent; border: none"
+                        >
+                          <div class="modal-body p-0">
+                            <picture>
+                              <source
+                                media="(max-width: 576px)"
+                                srcset="images/mobilesliderpopup0.jpg"
+                              />
+                              <source
+                                media="(max-width: 768px)"
+                                srcset="images/mobilesliderpopup0.jpg"
+                              />
+                              <img
+                                src="images/websliderpopup0.jpg"
+                                class="img-fluid"
+                                alt="Popup Image"
+                                style="width: 100vw; height: 100vh"
+                              />
+                            </picture>
+                          </div>
+                          <button
+                            type="button"
+                            class="close position-absolute my-close-btn"
+                            style="top: 15px; right: 35px; opacity: 1; width: 37px"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <img src="icon/popupClose.svg" alt="" />
+                            <span
+                              aria-hidden="true"
+                              style="font-size: 2rem; visibility: hidden"
+                              >&times;</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+          </div>
+
+          <!--Slider 1-->
+          <div class="carousel-item">
+            <button
+              id="sliderbutton1"
+              class="explore1"
+              data-toggle="modal"
+              data-target="#imageModal"
+            >
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/mobileslider1.jpg"
+                />
+
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/mobileslider1.jpg"
+                />
+
+                <source
+                  media="(max-width: 1366px)"
+                  srcset="images/mobileslider1.jpg"
+                />
+
+                <img
+                  src="images/slider1.jpg"
+                  class="d-block w-100 responsive-img"
+                  alt="slide-img-1"
+                  style="max-width: 100%; max-height: 100%; margin-top: -15px"
+                />
+              </picture>
+            </button>
+          </div>
+
+          <!-- Modal1 -->
+          <div
+            class="modal fade"
+            id="imageModal"
+            tabindex="-1"
+            aria-labelledby="imageModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div
+                class="modal-content"
+                style="background-color: transparent; border: none"
+              >
+                <div class="modal-body p-0">
+                  <picture>
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="images/mobilesliderpopup1.jpg"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="images/mobilesliderpopup1.jpg"
+                    />
+                    <img
+                      src="images/websliderpopup1.jpg"
+                      class="img-fluid"
+                      alt="Popup Image"
+                      style="width: 100vw; height: 100vh"
+                    />
+                  </picture>
+                </div>
+                <button
+                  type="button"
+                  class="close position-absolute my-close-btn"
+                  style="top: 15px; right: 35px; opacity: 1; width: 37px"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img src="icon/popupClose.svg" alt="" />
+                  <span
+                    aria-hidden="true"
+                    style="font-size: 2rem; visibility: hidden"
+                    >&times;</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--SLİDER 2-->
+          <div class="carousel-item">
+            <button data-toggle="modal" data-target="#imageModal2">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/mobileslider2.jpg"
+                />
+
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/mobileslider2.jpg"
+                />
+
+                <source
+                  media="(max-width: 1366px)"
+                  srcset="images/mobileslider2.jpg"
+                />
+
+                <img
+                  src="images/slider2.jpg"
+                  class="d-block w-100"
+                  alt="slide-img-2"
+                  style="max-width: 100%; margin-top: -15px"
+                />
+              </picture>
+            </button>
+          </div>
+
+          <!-- Modal 2-->
+          <div
+            class="modal fade"
+            id="imageModal2"
+            tabindex="-1"
+            aria-labelledby="imageModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div
+                class="modal-content"
+                style="background-color: transparent; border: none"
+              >
+                <div class="modal-body p-0">
+                  <picture>
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="images/mobilesliderpopup2.jpg"
+                    />
+
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="images/mobilesliderpopup2.jpg"
+                    />
+
+                    <img
+                      src="images/websliderpopup2.jpg"
+                      class="img-fluid"
+                      alt="Popup Image"
+                      style="width: 100vw; height: 100vh"
+                    />
+                  </picture>
+                </div>
+                <button
+                  type="button"
+                  class="close position-absolute my-close-btn"
+                  style="top: 15px; right: 35px; opacity: 1; width: 37px"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img src="icon/popupClose.svg" alt="" />
+                  <span
+                    aria-hidden="true"
+                    style="font-size: 2rem; visibility: hidden"
+                    >&times;</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+         <!--Slider 5-->
+         <div class="carousel-item">
+                      <button data-toggle="modal" data-target="#imageModal5">
+                        <picture>
+                          <source
+                            media="(max-width: 576px)"
+                            srcset="images/mobileslider5.jpg"
+                          />
+          
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="images/mobileslider5.jpg"
+                          />
+          
+                          <source
+                            media="(max-width: 1366px)"
+                            srcset="images/mobileslider5.jpg"
+                          />
+          
+                          <img
+                            src="images/slider5.jpg"
+                            class="d-block w-100"
+                            alt="slide-img-5"
+                            style="max-width: 100%; margin-top: -15px"
+                          />
+                        </picture>
+                      </button>
+         </div>
+          
+          <!-- Modal5 -->
+          <div
+                      class="modal fade"
+                      id="imageModal5"
+                      tabindex="-1"
+                      aria-labelledby="imageModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-fullscreen">
+                        <div
+                          class="modal-content"
+                          style="background-color: transparent; border: none"
+                        >
+                          <div class="modal-body p-0">
+                            <picture>
+                              <source
+                                media="(max-width: 576px)"
+                                srcset="images/mobilesliderpopup5.jpg"
+                              />
+          
+                              <source
+                                media="(max-width: 768px)"
+                                srcset="images/mobilesliderpopup5.jpg"
+                              />
+          
+                              <img
+                                src="images/websliderpopup5.jpg"
+                                class="img-fluid"
+                                alt="Popup Image"
+                                style="width: 100vw; height: 100vh"
+                              />
+                            </picture>
+                          </div>
+                          <button
+                            type="button"
+                            class="close position-absolute my-close-btn"
+                            style="top: 15px; right: 35px; opacity: 1; width: 37px"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <img src="icon/popupClose.svg" alt="" />
+                            <span
+                              aria-hidden="true"
+                              style="font-size: 2rem; visibility: hidden"
+                              >&times;</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+          </div>
+
+          <!--SLİDER 3-->
+          <div class="carousel-item">
+            <button data-toggle="modal" data-target="#imageModal3">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/mobileslider3.jpg"
+                />
+
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/mobileslider3.jpg"
+                />
+
+                <source
+                  media="(max-width: 1366px)"
+                  srcset="images/mobileslider3.jpg"
+                />
+
+                <img
+                  src="images/slider3.jpg"
+                  class="d-block w-100"
+                  alt="slide-img-3"
+                  style="max-width: 100%; margin-top: -15px"
+                />
+              </picture>
+            </button>
+          </div>
+          <!-- Modal 3-->
+          <div
+            class="modal fade"
+            id="imageModal3"
+            tabindex="-1"
+            aria-labelledby="imageModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div
+                class="modal-content"
+                style="background-color: transparent; border: none"
+              >
+                <div class="modal-body p-0">
+                  <picture>
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="images/mobilesliderpopup3.jpg"
+                    />
+
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="images/mobilesliderpopup3.jpg"
+                    />
+
+                    <img
+                      src="images/websliderpopup3.jpg"
+                      class="img-fluid"
+                      alt="Popup Image"
+                      style="width: 100vw; height: 100vh"
+                    />
+                  </picture>
+                </div>
+                <button
+                  type="button"
+                  class="close position-absolute my-close-btn"
+                  style="top: 15px; right: 35px; opacity: 1; width: 37px"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img src="icon/popupClose.svg" alt="" />
+                  <span
+                    aria-hidden="true"
+                    style="font-size: 2rem; visibility: hidden"
+                    >&times;</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--SLİDER 4-->
+          <div class="carousel-item">
+            <button data-toggle="modal" data-target="#imageModal4">
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="images/mobileslider4.jpg"
+                />
+
+                <source
+                  media="(max-width: 768px)"
+                  srcset="images/mobileslider4.jpg"
+                />
+
+                <source
+                  media="(max-width: 1366px)"
+                  srcset="images/mobileslider4.jpg"
+                />
+
+                <img
+                  src="images/slider4.jpg"
+                  class="d-block w-100"
+                  alt="slide-img-4"
+                  style="max-width: 100%; margin-top: -15px"
+                />
+              </picture>
+            </button>
+          </div>
+          <!-- Modal 4-->
+          <div
+            class="modal fade"
+            id="imageModal4"
+            tabindex="-1"
+            aria-labelledby="imageModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div
+                class="modal-content"
+                style="background-color: transparent; border: none"
+              >
+                <div class="modal-body p-0">
+                  <picture>
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="images/mobilesliderpopup4.jpg"
+                    />
+
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="images/mobilesliderpopup4.jpg"
+                    />
+
+                    <img
+                      src="images/websliderpopup4.jpg"
+                      class="img-fluid"
+                      alt="Popup Image"
+                      style="width: 100vw; height: 100vh"
+                    />
+                  </picture>
+                </div>
+                <button
+                  type="button"
+                  class="close position-absolute my-close-btn"
+                  style="top: 15px; right: 35px; opacity: 1; width: 37px"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img src="icon/popupClose.svg" alt="" />
+                  <span
+                    aria-hidden="true"
+                    style="font-size: 2rem; visibility: hidden"
+                    >&times;</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Yön İşaretleri -->
+        <a
+          class="carousel-control-prev"
+          href="#carousel-example"
+          role="button"
+          data-slide="prev"
+        >
+          <span aria-hidden="true">
+            <img src="icon/yonsol.svg" alt="Sağ Ok" width="50" height="50" />
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#carousel-example"
+          role="button"
+          data-slide="next"
+        >
+          <span aria-hidden="true">
+            <img src="icon/yonsag.svg" alt="Sağ Ok" width="50" height="50" />
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- End carousel -->
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+
+    <div id="playimage" class="play-image" style="display: none">
+      <button id="storeButton2">
+        <picture>
+          <source media="(max-width: 576px)" srcset="images/playimage.jpg" />
+
+          <source media="(max-width: 768px)" srcset="images/playimage.jpg" />
+
+          <source media="(max-width: 1366px)" srcset="images/playimage.jpg" />
+
+          <img
+            src="images/playimage.jpg"
+            alt="fullscreen image"
+            class="fullscreen-img"
+            style="max-width: 100%"
+          />
+        </picture>
+      </button>
+    </div>
+
+    <div id="play" class="fullscreen-img-container">
+      <button id="storeButton">
+        <picture>
+          <source
+            media="(max-width: 576px)"
+            srcset="images/section4mobile.jpg"
+          />
+
+          <source
+            media="(max-width: 768px)"
+            srcset="images/section4mobile.jpg"
+          />
+
+          <source
+            media="(max-width: 1366px)"
+            srcset="images/section4mobile.jpg"
+          />
+
+          <img
+            src="images/section4.jpg"
+            alt="fullscreen image"
+            class="fullscreen-img"
+            style="max-width: 100%"
+          />
+        </picture>
+      </button>
+    </div>
+
+    <!-- yeni oyun -->
+    <div id="playimage2" class="play-image2" style="display: none">
+      <button id="storeButton4">
+        <picture>
+          <source media="(max-width: 576px)" srcset="images/playgamemobile.jpg" />
+
+          <source media="(max-width: 768px)" srcset="images/playgamemobile.jpg" />
+
+          <source media="(max-width: 1366px)" srcset="images/playgamemobile.jpg" />
+
+          <img
+            src="images/playgamemobile.jpg"
+            alt="fullscreen image"
+            class="fullscreen-img"
+            style="max-width: 100%"
+          />
+        </picture>
+      </button>
+    </div>
+
+
+    <!-- yeni oyun -->
+    <div id="play2" class="fullscreen-img-container2">
+      <button id="storeButton3">
+        <picture>
+          <source
+            media="(max-width: 576px)"
+            srcset="images/playgamemobilestore.jpg"
+          />
+
+          <source
+            media="(max-width: 768px)"
+            srcset="images/playgamemobilestore.jpg"
+          />
+
+          <source
+            media="(max-width: 1366px)"
+            srcset="images/playgamemobilestore.jpg"
+          />
+
+          <img
+            src="images/playgame.jpg"
+            alt="fullscreen image"
+            class="fullscreen-img"
+            style="max-width: 100%"
+          />
+        </picture>
+      </button>
+    </div>
+    <!-- </div>
+    </div> -->
+    <!-- end portfolio -->
+    <!-- chose -->
+    <div id="join">
+      <button onClick="location.href='mailto:info@pakavi.com'">
+        <picture>
+          <source
+            media="(max-width: 576px)"
+            srcset="images/section5mobile.jpg"
+          />
+
+          <source
+            media="(max-width: 768px)"
+            srcset="images/section5mobile.jpg"
+          />
+
+          <source
+            media="(max-width: 1366px)"
+            srcset="images/section5mobile.jpg"
+          />
+
+          <img
+            src="images/section5.jpg"
+            alt="fullscreen image"
+            class="fullscreen-img2"
+            style="max-width: 100%; position: relative"
+          />
+        </picture>
+      </button>
+    </div>
+    <!-- contact -->
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="copyright text_align_left">
+          <div class="container">
+            <div class="row d_flex">
+              <div class="col-md-6 col-12 left-content">
+                <p>
+                  <span style="font-family: Quicksand, serif;"> &copy;</span>
+                  <a  style="font-family: Quicksand, sans-serif;" href="https://pakavi.com/copyright/todix/" target="_blank"> pakavi</a>
+                </p>
+              </div>
+              <div class="col-md-6 col-12 right-content ml-auto">
+                <ul class="social_icon d-flex justify-content-end">
+                  <li class="todix_footer_logo">
+                    <a class="image-link-todix">
+                      <picture>
+                        <source
+                        media="(max-width: 576px)"
+                        srcset="images/todix_app_google.jpg"
+                      />
+            
+                      <source
+                        media="(max-width: 768px)"
+                        srcset="images/todix_app_google.jpg"
+                      />
+            
+                      <source
+                        media="(max-width: 1366px)"
+                        srcset="images/todix_app_google.jpg"
+                      />
+
+                        <img
+                        src="images/todixkontorlulogo.png"
+                        alt="Todix Logo Kontorlu"
+                        style="width: 175px; height: auto"
+                      />
+                      </picture>
+                    </a>
+                  </li>
+                  <li class="app_google">
+                      <img
+                        src="images/play_app.jpg"
+                        alt="App Store"
+                        style="width: 100px; height: auto"
+                      />
+                  </li>
+                  <!-- <li>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.Pakavi.Todix&gl=TR"
+                      target="_blank"
+                      class="image-link"
+                    >
+                      <img
+                        src="images/googleplaylogo.png"
+                        alt="Google Play Store"
+                        style="width: 125px; height: auto"
+                      />
+                    </a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll back button -->
+    <a id="button">
+      <img src="icon/scrollback_white.PNG"/>
+    </a>
+
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/scroll-back.js"></script>
+
+    <!-- TouchSwipe JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
+    <script>
+      $("#carousel-example").swipe({
+        swipe: function (event, direction) {
+          if (direction === "left") {
+            $(this).carousel("next");
+          } else if (direction === "right") {
+            $(this).carousel("prev");
+          }
+        },
+        allowPageScroll: "vertical",
+      });
+    </script>
+
+    <script>
+      document
+        .getElementById("storeButton")
+        .addEventListener("click", function () {
+          // Kullanıcının cihazını tespit etmek için navigator.userAgent kullanalım
+          var userAgent =
+            navigator.userAgent || navigator.vendor || window.opera;
+
+          // iOS cihazlarını tespit et
+          if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            // Eğer iOS cihazıysa, App Store'a yönlendir
+            window.location.href = "https://apps.apple.com/tr/app/todix/id1614078542?l=tr";
+          }
+          // Android cihazlarını tespit et
+          else if (/android/i.test(userAgent)) {
+            // Eğer Android cihazıysa, Google Play'e yönlendir
+            window.location.href = "https://play.google.com/store/apps/details?id=com.Pakavi.Todix&pcampaignid=web_share";
+          }
+          // Diğer platformlar için
+          else {
+            alert(
+              "Uygulama yalnızca iOS ve Android cihazlarda kullanılabilir."
+            );
+          }
+        });
+    </script>
+
+<script>
+  document
+    .getElementById("storeButton3")
+    .addEventListener("click", function () {
+      // Kullanıcının cihazını tespit etmek için navigator.userAgent kullanalım
+      var userAgent =
+        navigator.userAgent || navigator.vendor || window.opera;
+
+      // iOS cihazlarını tespit et
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // Eğer iOS cihazıysa, App Store'a yönlendir
+        window.location.href = "https://apps.apple.com/tr/app/todix/id1614078542?l=tr";
+      }
+      // Android cihazlarını tespit et
+      else if (/android/i.test(userAgent)) {
+        // Eğer Android cihazıysa, Google Play'e yönlendir
+        window.location.href = "https://play.google.com/store/apps/details?id=com.Pakavi.Todix&pcampaignid=web_share";
+      }
+      // Diğer platformlar için
+      else {
+        alert(
+          "Uygulama yalnızca iOS ve Android cihazlarda kullanılabilir."
+        );
+      }
+    });
+</script>
+
+<script>
+  // Tüm nav-link öğelerine tıklama olayı ekle
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(function(navLink) {
+    navLink.addEventListener('click', function() {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var navbarCollapse = document.querySelector('.navbar-collapse');
+
+      // Eğer menü açık ise (collapse sınıfı yoksa), collapse sınıfını ekleyerek menüyü kapat
+      if (navbarToggler && !navbarCollapse.classList.contains('collapsed')) {
+        navbarToggler.click(); // Menü kapanması için tıklama simülasyonu
+      }
+    });
+  });
+</script>
+
+<script>
+document.addEventListener('scroll', function() {
+    var navbarCollapse = document.querySelector('.navbar-collapse');
+    var navbarToggler = document.querySelector('.navbar-toggler');
+
+    if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');  // Close the menu
+        navbarToggler.classList.add('collapsed'); // Return button to original state
+        navbarToggler.setAttribute('aria-expanded', 'false'); // Update accessibility attribute
+    }
+});
+
+</script>
+
+<!--navbar menu button-->
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
+
+<!-- Play kısmı animasyon -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const target = document.getElementById('play');
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  observer.observe(target);
+});
+
+  </script>
+
+  </body>
+</html>
